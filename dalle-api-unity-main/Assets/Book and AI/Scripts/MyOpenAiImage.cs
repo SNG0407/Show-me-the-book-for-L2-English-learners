@@ -13,6 +13,7 @@ public class MyOpenAiImage : MonoBehaviour
 {
 	public GameObject loadingpanel;
 	public TMP_InputField inputText;
+	public TMP_InputField LoadFileText;
 	public TMP_Text resultText;
 	public List<GameObject> previewObjs;
 
@@ -130,7 +131,7 @@ public class MyOpenAiImage : MonoBehaviour
 			{
 				string fileContents = File.ReadAllText(filePath);
 				// Now use the fileContents as needed, e.g., display it in a UI Text element.
-				Debug.LogError("File found: " + fileContents);
+				Debug.Log("File found: " + fileContents);
 
 			}
 			else

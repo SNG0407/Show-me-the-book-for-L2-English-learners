@@ -7,6 +7,8 @@ using System.IO;
 
 public class LoadBook : MonoBehaviour
 {
+	public TMP_InputField LoadFileText;
+
     public TextMeshProUGUI displayText; // Reference to the TextMeshPro Text element.
     public Button wordButtonPrefab; // Reference to the Button prefab to create clickable buttons.
     public Transform wordButtonContainer; // The parent object for the word buttons.
@@ -57,6 +59,7 @@ public class LoadBook : MonoBehaviour
           CurrentPageText.text = CurrentPage.ToString();
     }
     public void LoadMyBookTXT(string MyFileName){
+        MyFileName = LoadFileText.text;
         LoadBookTxt(MyFileName);
         MakePages();
         DestroyAllChildren(wordButtonContainer);

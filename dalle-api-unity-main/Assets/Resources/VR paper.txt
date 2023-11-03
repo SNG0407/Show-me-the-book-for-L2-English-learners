@@ -3,14 +3,14 @@ Virtual Learning Environments (VLEs) became the primary space for
 education during the Coronavirus disease (COVID-19) lockdowns. One
 of the additions that specifically VR has to offer is its potential to
 incorporate some of the qualities that define interpersonal
-communication and typically lack in distance-learning VLEs. This study°Øs
+communication and typically lack in distance-learning VLEs. This study‚Äôs
 aim is exploration of those qualities to appreciate Virtual Reality
 Learning Environments (VRLEs) as a supplementary tool for distance
 learning and its impact on knowledge acquisition processes, with the
 particular objectives of evaluating usability, usefulness, and realism of
 Non-Verbal Cues (NVCs) capture. Toward this end a multi-user VRLE
 prototype was developed and utilized for the delivery of a live lecture
-by a real professor of a MSc programme. The professor°Øs body motion
+by a real professor of a MSc programme. The professor‚Äôs body motion
 and facial expressions were captured in real-time and solved onto a
 high-fidelity avatar. In total, a group of 20 students audited the lecture
 via the VRLE and evaluated the modalities and experience offered
@@ -35,11 +35,11 @@ evident during the COVID-19 mandatory lockdowns when distance learning substitut
 and in-person learning worldwide (Singh et al., 2020) since for children in primary and secondary
 education and university and college students the entire 2020?2021 academic year was in jeopardy
 (Mseleku, 2020).
-Several studies are reporting the positive impact VRLEs have on students°Ø engagement and performance compared to other non-immersive learning approaches (Vergara-Rodriguez et al.; Wu
+Several studies are reporting the positive impact VRLEs have on students‚Äô engagement and performance compared to other non-immersive learning approaches (Vergara-Rodriguez et al.; Wu
 et al., 2020), while others focus on usability issues examining the effects of equipment such as
 Head Mounted Displays (HMDs), Controllers and Motion Tracking techniques on the learning experience provided through VRLEs (Kavanagh et al., 2017). One crucial aspect of the VR learning experience is the utilization of multi-user VRLEs, as shared spaces or virtual worlds wherein students and
 educators have extensive control over 3D individual avatars. Studies on multi-user VRLEs and avatar
-representation are also reporting enhanced engagement and performance (O°ØConnor et al., 2018;
+representation are also reporting enhanced engagement and performance (O‚ÄôConnor et al., 2018;
 Schild et al., 2018).
 In addition to the above, evolvement of immersive technologies is now looking into incorporation of real-time body motion and gaze, as well as high-fidelity avatars by development of realtime facial cue capture (Chague & Charbonnier, 2016; Roth et al., 2019). That attention is mostly
 driven by the importance of NVCs in face-to-face interpersonal communication (Archer & Akert,
@@ -54,7 +54,7 @@ process, while their lack makes communication over collaborative tasks in VRLEs 
 (Ripka et al., 2020).
 Scarce examples of NVCs incorporation in VRLEs indicate their potential in enhancing the quality
 of the learning experience. For example, allowing students to control their virtual body in VRLEs
-increases their immersion and enjoyment compared to conventional VLEs (Zizza et al., 2018). Moreover, solving real facial expressions to a professor°Øs avatar can help hold student attention, and thus
+increases their immersion and enjoyment compared to conventional VLEs (Zizza et al., 2018). Moreover, solving real facial expressions to a professor‚Äôs avatar can help hold student attention, and thus
 improve knowledge acquisition, especially when the virtual lectures involve complicated language
 (Theonas et al., 2008).
 Nevertheless, those VRLE examples feature limited NVCs. Zizza et al. (2018) and Ripka et al.
@@ -64,10 +64,10 @@ face expressions of a virtual professor who however lacks body motion whereas in
 the VRLEs incorporating detailed NVCs, our work aims toward shedding light into the effect of their
 integration to the learning experience. In detail, the VRLE investigated here differentiates from
 others in terms of using a high-fidelity avatar representing the real professor in the virtual
-world. The professor°Øs avatar features detailed NVCs such as facial expressions, full body motion,
+world. The professor‚Äôs avatar features detailed NVCs such as facial expressions, full body motion,
 including finger motion which allows for detailed gestures, and gaze motion, all tracked and delivered to students in real time. This setup allows for higher avatar NVCs fidelity compared to the
 systems presented above.
-The aim of this study is investigation of NVCs effects on the learning experience via the VRLE prototype, whilst simultaneously gaining valuable insight as to the technological practicalities and challenges of incorporating such modalities in VR systems. The objectives set to evaluate the VRLE°Øs
+The aim of this study is investigation of NVCs effects on the learning experience via the VRLE prototype, whilst simultaneously gaining valuable insight as to the technological practicalities and challenges of incorporating such modalities in VR systems. The objectives set to evaluate the VRLE‚Äôs
 usability, level of realism, and usefulness, and investigate its overall adequacy as an educational
 tool compared to conventional VLEs such as the BBB.
 
@@ -75,17 +75,17 @@ Methods
 Study design and participants
 The VRLE developed for this study was evaluated by 20 post-graduate students (12 Female, 8 Male),
 between 23 and 55 years old, who were attending the same MSc programme. The educational
-content that helped with the VRLE°Øs evaluation is the final part of an actual lecture that is taught
-each year as part of the course°Øs official curriculum. Based on the existing syllabus, on the day of
+content that helped with the VRLE‚Äôs evaluation is the final part of an actual lecture that is taught
+each year as part of the course‚Äôs official curriculum. Based on the existing syllabus, on the day of
 the evaluation, students were taught about User Interfaces (UIs) in games (Raffaele et al., 2017) featuring integrated multimedia content.
 Typically, students audit this course via BBB since the entire MSc programme is remote. The final
 part of the two-hour lecture is approximately 30 min in length, and students were provided with a
 link that allowed them to install the VRLE and audit this part of the lecture in real-time, whilst the
-professor°Øs body motion, facial expressions, and gaze were motion captured during his actual presentation and solved onto his avatar.
+professor‚Äôs body motion, facial expressions, and gaze were motion captured during his actual presentation and solved onto his avatar.
 In addition, another 20 students (10 Female, 10 Male) of the same MSc programme, between 24
 and 50 years old audited the same exact lecture, and the same exact examples, but only via their
 typical BBB modalities. More specifically, screenshots of the same VRLE were used to exemplify
-the lecture°Øs content, but that group of students was not able to navigate a virtual space in realtime or watch the professor°Øs avatar roam and spatially organize interface-related information in
+the lecture‚Äôs content, but that group of students was not able to navigate a virtual space in realtime or watch the professor‚Äôs avatar roam and spatially organize interface-related information in
 three-dimensions.
 System architecture
 To develop the VRLE presented in this work we integrated, and customized when required, a variety
@@ -98,45 +98,45 @@ HMD and VIVE Trackers with the Inverse Kinematics (IK) solution Final IK [http:/
 overall development of the system was completed using Unity [https://unity.com/], while the
 avatar representing the real professor in the virtual world was designed using Character Creator
 [https://www.reallusion.com/].
-To track the professor°Øs finger-motion the ManusVR Gloves [https://manus-vr.com/] were utilized.
+To track the professor‚Äôs finger-motion the ManusVR Gloves [https://manus-vr.com/] were utilized.
 Finger tracking, when using the ManusVR Unity SDK, was not optimal as several inconsistencies were
 documented. Therefore, additional code had to be authored to include rotation coefficient offsets for
-each finger°Øs rotational data provided by the ManusVR Gloves, to appropriately transfer finger
-rotation to the professor°Øs avatar. The capture of the professor°Øs facial expressions required two separate solutions. The Pupil Labs Eye Tracking [https://pupil-labs.com/] was used to capture eyemotion, therefore direction of gaze, which was then transferred to the professor°Øs avatar, whereas
+each finger‚Äôs rotational data provided by the ManusVR Gloves, to appropriately transfer finger
+rotation to the professor‚Äôs avatar. The capture of the professor‚Äôs facial expressions required two separate solutions. The Pupil Labs Eye Tracking [https://pupil-labs.com/] was used to capture eyemotion, therefore direction of gaze, which was then transferred to the professor‚Äôs avatar, whereas
 BinaryVR [https://www.hyprsense.com/] captured, through an infrared camera, motions of the
-mouth and lower jaw and transferred them onto the professor°Øs avatar via an array of BlendShapes
+mouth and lower jaw and transferred them onto the professor‚Äôs avatar via an array of BlendShapes
 [https://docs.unity3d.com/Manual/BlendShapes.html]. By this, aside from capturing any grimaces,
 which are regarded as NVCs, mouth movements matched and were accurately synchronized
 between the professor and the avatar, enhancing overall realism of delivery.
-The BinaryVR Unity°Øs SDK includes an example for transferring facial expressions data onto the
+The BinaryVR Unity‚Äôs SDK includes an example for transferring facial expressions data onto the
 face of an avatar through blendshapes. However, the model provided by Binary is custom-made
 and unsuitable for solving tracked facial expressions onto other 3D human models. To address
 this issue, the correspondence between blendshape data provided by the BinaryVR SDK and
-those of the professor°Øs avatar had to be calibrated accordingly to match differences in the 3D
+those of the professor‚Äôs avatar had to be calibrated accordingly to match differences in the 3D
 model structure. Then, a custom script was utilized to create a float coefficient for each blendshape.
 By manipulating each coefficient using a slider, while multiplying it with the corresponding blendshape data provided by BinaryVR, we was able to calibrate any facial expressions offsets, matching
 the facial expressions of the professor in the real-world with the ones of his avatar in the virtual world
 (see Figure 1).
-The next step of the system°Øs development process was synchronization between the data from
-the professor°Øs VR Ready PC and the desktop clients used by the students who were watching and
+The next step of the system‚Äôs development process was synchronization between the data from
+the professor‚Äôs VR Ready PC and the desktop clients used by the students who were watching and
 participating in the lecture. To do so, Mirror [https://mirror-networking.com/] (TCP Server in C#) was
-assisted in keeping the overall data packed as small as possible. More specifically, to ensure smoothness in the avatar°Øs motion, all sensor data collected from the tracking devices (628 bytes) had to be
+assisted in keeping the overall data packed as small as possible. More specifically, to ensure smoothness in the avatar‚Äôs motion, all sensor data collected from the tracking devices (628 bytes) had to be
 sent in each Transmission Control Protocol (TCP) packet. High-speed synchronization was ensured
 because this packet is half the safe size limit of Mirror (Figure 2).
 The finalized system allowed remote students to connect and roam around a shared virtual world,
 as well as attend the lecture taking place inside the virtual environment, by using their personal
 desktop/laptop computers (see Figure 3(a)). As mentioned elsewhere, one of the objectives was
-the evaluation of the avatar°Øs high-fidelity impact on the overall learning experience facilitated by
+the evaluation of the avatar‚Äôs high-fidelity impact on the overall learning experience facilitated by
 the VRLE. Therefore, students had their own avatars, but those were minimal featuring simple
-disk-shaped 3D models, drawing most of the focus toward the professor°Øs more complex and sophisticated avatar. Also, each student avatar was equipped with a camera, which could be rotated using
+disk-shaped 3D models, drawing most of the focus toward the professor‚Äôs more complex and sophisticated avatar. Also, each student avatar was equipped with a camera, which could be rotated using
 a mouse, and placed at a proper height to allow them to observe the virtual world at a fixed eye level.
 This way we provided a sense of location for each student in relation to the others in the virtual
 world, ensured their ability to maintain eye contact with the professor (see Figure 3(b)), and
 avoided distractions. Moreover, students could communicate with each other as well as the professor via VoIP.
-Finally, as mentioned above, the lectures°Ø content was dedicated to UIs in games. Therefore, the
+Finally, as mentioned above, the lectures‚Äô content was dedicated to UIs in games. Therefore, the
 particular environment students witnessed inside the VRLE was specifically designed to showcase
 concepts of UIs in games, such as the differences between diegetic, non-diegetic, spatial, and
-meta-user interfaces, etc (Raffaele et al., 2017). The elements used as °∞props°± of the lecture were
+meta-user interfaces, etc (Raffaele et al., 2017). The elements used as ‚Äúprops‚Äù of the lecture were
 specifically designed for that course and allowed the professor to perform sophisticated actions
 such as pointing to enlarged, 3D UI elements (see Figure 3(c,d)).
 
@@ -148,9 +148,9 @@ how the COVID-19 social distancing restrictions have impacted the learning proce
 set of questionnaire items (31) refers to the VRLE that the students had just experienced, and
 those items are further divided into sets of questions regarding usability, realism, and usefulness
 of the VRLE, along with questions regarding NVCs effect on the learning experience. The
-questionnaire°Øs design, exploring various aspects of a VRLE experience, was adjusted by following
+questionnaire‚Äôs design, exploring various aspects of a VRLE experience, was adjusted by following
 the example of past studies and their respective methodologies and inquiries. Specifically, questions
-about COVID-19 and social restriction°Øs impact on the learning process were based on ArmstrongMensah et al. (2020) and Amir et al. (2020); usability questions were adapted from, while usefulness
+about COVID-19 and social restriction‚Äôs impact on the learning process were based on ArmstrongMensah et al. (2020) and Amir et al. (2020); usability questions were adapted from, while usefulness
 and NVCs effect on the learning experience questions were adapted from Huang et al. (2010) and
 Theonas et al. (2008), respectively.
 Both the group of 20 students who followed the lecture via the VRLE and the other 20 who followed it only via the BBB on another occasion, were individually tasked with designing a game the UI
@@ -176,7 +176,7 @@ confirmed one by one to understand the parameters of their participation and pro
 consent verbally whilst their statement was being screen-recorded by a researcher.
 Students were aware that an evaluation will be conducted via questionnaires upon completion of
 the lecture and naturally some of them would be potentially participating. However, their participation was not disclosed to one another. Their overall anonymity is ensured since there are no identifiers from any of the data collected. The lecture as a whole was not screen-recorded. Still, during the
-lecture and aside from the professor°Øs avatar, none of the other models were identifiable as to who is
+lecture and aside from the professor‚Äôs avatar, none of the other models were identifiable as to who is
 the handler and therefore individual virtual actions were not associated with any particular person. In
 simple words, neither the students nor the professor could identify who is who in the VRLE as all
 models were the same. All intercommunication that took place during the virtual lecture (e.g. questions asked and answered) was no different from the typical communication during BBB remote lectures as the professor could correlate any voice to any specific student avatar.
@@ -188,7 +188,7 @@ data collected are treated as ordinal, relying on median values to reveal centra
 with standard deviation - SD (Sullivan & Artino Jr, 2013). Questionnaire results are followed by the
 knowledge acquisition evaluation which, as mentioned, was based on a comparison of average
 group performance on the assignment given and individually submitted by and scored for each
-student at the end of the academic term. The section concludes with the professor°Øs evaluation
+student at the end of the academic term. The section concludes with the professor‚Äôs evaluation
 of the experience, derived from the semi-structured interview transcripts.
 
 
@@ -198,7 +198,7 @@ a hybrid learning programme even prior to the pandemic, combining in person cras
 beginning of each semester with weekly synchronous e-courses via the BBB platform. However,
 during the mandatory lockdowns crash courses were cancelled and the entirety of the programme
 was carried out long-distance.
-As shown by the evaluation results, student°Øs interest towards attending the MSc programme was
+As shown by the evaluation results, student‚Äôs interest towards attending the MSc programme was
 affected by neither the Covid-19 restrictions (see Table 1 ? Q1), nor the in-person learning specific
 restrictions (see Table 1 ? Q2). Moreover, according to students, the absence of in-person meetings
 did not reduce the overall quality of the MSc programme (see Table 1 ? Q3). Nevertheless, the ability
@@ -207,8 +207,8 @@ the experience provided by it is hard to substitute despite the existence of hig
 learning tools. Lectures provided through tools like BBB can help create a classroom-like environment for students (see Table 1 ? Q5), addressing to an extent their feelings of isolation during
 online lectures (see Table 1 ? Q6). Students also confirmed that online lectures can adequately
 provide them with all the content required to understand a subject (see Table 1 ? Q7), whilst
-being able to see the teacher°Øs movements and facial expressions, therefore their NVCs, via the
-web camera of the BBB helps them further understand the lecture°Øs content and maintain their
+being able to see the teacher‚Äôs movements and facial expressions, therefore their NVCs, via the
+web camera of the BBB helps them further understand the lecture‚Äôs content and maintain their
 attention during lectures (see Table 1 ? Q8 and Table 1 ? Q9).
 Overall, the evaluation results presented here indicate that distance learning and tools like BBB
 are invaluable to students, allowing them to fully understand a subject while reducing their feelings
@@ -225,22 +225,22 @@ the average performance of the application was 148 frames per second (FPS).
 According to student responses, the VRLE functioned properly without any serious errors (see
 Table 2 ? Q1), allowing them to easily navigate through the virtual environment (see Table 2 ?
 Q2). The graphical elements of the virtual environment were comprehensible and clear (see Table
-2 ? Q3), while the professor°Øs motion was seamless without any interruptions (see Table 2 ? Q4).
+2 ? Q3), while the professor‚Äôs motion was seamless without any interruptions (see Table 2 ? Q4).
 More specifically, students could clearly observe and follow the body motion of the virtual professor
-(see Table 2 ? Q5) but faced minor difficulties when observing and following the professor°Øs gaze
+(see Table 2 ? Q5) but faced minor difficulties when observing and following the professor‚Äôs gaze
 (see Table 2 ? Q6), focal point (see Table 2 ? Q7), and finger motion/gestures (see Table 2 ? Q8). This
 incident occurred to six out of the twenty students evaluating the VRLE. When asked to elaborate,
-those students noted that periodic latency occurred during the learning experience, slightly dropping the refresh rate of the virtual professor°Øs gaze and finger motion. However, four (4) out of
-those five (5) students°Ø equipment was of low-end, featuring an average performance of 46 FPS,
+those students noted that periodic latency occurred during the learning experience, slightly dropping the refresh rate of the virtual professor‚Äôs gaze and finger motion. However, four (4) out of
+those five (5) students‚Äô equipment was of low-end, featuring an average performance of 46 FPS,
 whereas four (4) out of those six (5) students featured slow internet connection speeds with an
 average of 10Mbps. The absence of difficulties when following the virtual professors gaze and
 finger motion/gestures in the rest of the students (15) featuring both increased FPS and internet connection speeds clearly shows that those metrics are of high importance for the performance of VRLEs
 incorporating high fidelity avatars featuring detailed NVCs. As noted by three (3) of those students,
-another factor affecting their ability to observe and follow the virtual professor°Øs gaze and finger
+another factor affecting their ability to observe and follow the virtual professor‚Äôs gaze and finger
 motion was the use of a small display, which prohibited them from clearly observing those
 aspects at all times during the lecture.
-Continuing, the virtual professor°Øs voice quality was appreciated by all participants (see Table 2 ?
-Q9), and was perceived in sync with his overall body motion (see Table 2 ? Q10). Minor latency incidents occurred in the synchronization of the virtual professor°Øs voice and facial expressions (see
+Continuing, the virtual professor‚Äôs voice quality was appreciated by all participants (see Table 2 ?
+Q9), and was perceived in sync with his overall body motion (see Table 2 ? Q10). Minor latency incidents occurred in the synchronization of the virtual professor‚Äôs voice and facial expressions (see
 Table 2 ? Q11), reducing their clarity to students as well (see Table 2 ? Q12). Again, most of those
 incidents occurred to students equipped with low-end equipment, small displays, and slow internet
 connection speeds. All in all, the avatar fidelity sufficed for students to understand his emotional
@@ -248,9 +248,9 @@ state in the virtual world (see Table 2 ? Q13) and follow his directions when re
 ? Q14).
 The questionnaire items, as presented in Table 3, examine the level of the VRLE realism. As already
 mentioned in Section 2, humans can observe the slighted inaccuracies in a virtual world, affecting
-both their immersion and its overall level of realism. In the VRLE presented here, students appreciated the fidelity of the virtual professor°Øs motion and facial expressions (see Table 3 ? Q1). Moreover,
-the virtual professor°Øs body and finger motion added to the overall realism of the VRLE (see Table 3 ?
-Q2). The same occurred for the incorporation of both the virtual professor°Øs facial expressions (see
+both their immersion and its overall level of realism. In the VRLE presented here, students appreciated the fidelity of the virtual professor‚Äôs motion and facial expressions (see Table 3 ? Q1). Moreover,
+the virtual professor‚Äôs body and finger motion added to the overall realism of the VRLE (see Table 3 ?
+Q2). The same occurred for the incorporation of both the virtual professor‚Äôs facial expressions (see
 Table 3?Q3) and gaze direction which increased the overall realism of the experience as well (Table 3
 ? Q4). Those results indicate that the incorporation of such NVCs in a VRLE can assist toward increasing its overall level of realism and subsequently the quality of the overall experience it prov
 
