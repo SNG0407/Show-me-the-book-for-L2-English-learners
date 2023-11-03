@@ -38,7 +38,7 @@ public class LoadBook : MonoBehaviour
         //3 페이지는 2끝+1 ~ 3끝
 
         // Load your Excel data into the 'words' list (load from Excel or another source).
-        LoadBookTxt();
+        LoadBookTxt(fileName);
 
         //18줄이 한 페이지
 
@@ -56,9 +56,15 @@ public class LoadBook : MonoBehaviour
     {
           CurrentPageText.text = CurrentPage.ToString();
     }
-    private void LoadBookTxt()
+    public void LoadMyBookTXT(string MyFileName){
+        LoadBookTxt(MyFileName);
+        MakePages();
+        DestroyAllChildren(wordButtonContainer);
+        ShowCurrentPage(CurrentPage);
+    }
+    private void LoadBookTxt(string MyFileName)
     {
-        TextAsset textAsset = Resources.Load<TextAsset>(fileName);
+        TextAsset textAsset = Resources.Load<TextAsset>(MyFileName);
         if (textAsset != null)
         {
             string textContent = textAsset.text;

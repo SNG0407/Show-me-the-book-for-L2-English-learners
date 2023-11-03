@@ -51,10 +51,19 @@ public class Utility : MonoBehaviour
         byte[] textureBytes = texture.EncodeToPNG();
 		//string path = GetBasePath() + fileName;
 		string path = Application.dataPath+"/Resources/AI_image/" + fileName;
+		
 		Debug.Log("Path: " + path);
         
         File.WriteAllBytes(path, textureBytes);
 		Debug.Log("File Written On Disk! " + path);
+
+        string path2 = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", fileName);
+        // Ensure the directory exists
+        Directory.CreateDirectory(Path.GetDirectoryName(path2));
+        // Write the file content to the path
+        File.WriteAllBytes(path2, textureBytes);
+
+
 		return path;
 	}
 

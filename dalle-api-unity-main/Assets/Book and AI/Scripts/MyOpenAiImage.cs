@@ -125,6 +125,19 @@ public class MyOpenAiImage : MonoBehaviour
 			// Assign the sprite to the RawImage component
 			rawImage.texture = imageSprite.texture;
 			//StartCoroutine(WriteImageAndLoad(description, _texture, TranslationManager.instance.wordToSearch));
+			string filePath = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", description + ".jpg");
+			if (File.Exists(filePath))
+			{
+				string fileContents = File.ReadAllText(filePath);
+				// Now use the fileContents as needed, e.g., display it in a UI Text element.
+				Debug.LogError("File found: " + fileContents);
+
+			}
+			else
+			{
+				Debug.LogError("File not found: " + filePath);
+				// Handle the situation where the file doesn't exist.
+			}
 
 		}
 
