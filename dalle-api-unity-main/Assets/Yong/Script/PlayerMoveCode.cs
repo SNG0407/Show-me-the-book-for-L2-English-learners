@@ -42,23 +42,23 @@ public class PlayerMoveCode : GenericBehaviour
 		}
 
 
-		////Press ESC pause
-		//if (Input.GetKeyDown(KeyCode.Escape))
-		//{
-		//	isLock = !isLock;
-		//	if (isLock)
-		//	{
-		//		Time.timeScale = 0;
-		//		Cursor.lockState = CursorLockMode.None;
-		//		Cursor.visible = true;
-		//	}
-		//	else
-		//	{
-		//		Time.timeScale = 1;
-		//		Cursor.lockState = CursorLockMode.Locked;
-		//		Cursor.visible = false;
-		//	}
-		//}
+		//Press ESC pause
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			isLock = !isLock;
+			if (isLock)
+			{
+				Time.timeScale = 0;
+				Cursor.lockState = CursorLockMode.None;
+				Cursor.visible = true;
+			}
+			else
+			{
+				Time.timeScale = 1;
+				Cursor.lockState = CursorLockMode.Locked;
+				Cursor.visible = false;
+			}
+		}
 	}
 
 

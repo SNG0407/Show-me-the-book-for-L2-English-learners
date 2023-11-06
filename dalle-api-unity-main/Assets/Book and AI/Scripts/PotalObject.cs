@@ -52,6 +52,7 @@ public class PotalObject : MonoBehaviour
     public void EnterBtn()
     {
         Debug.Log("Enter the room!");
+         SceneManager.LoadScene("HarryPotterRoom");
         // if (bookReaderUI != null)
         // {
         //     EnterRoomUI.SetActive(false);
