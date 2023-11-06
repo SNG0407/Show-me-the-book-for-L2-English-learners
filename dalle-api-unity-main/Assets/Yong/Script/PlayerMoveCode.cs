@@ -161,6 +161,11 @@ public class PlayerMoveCode : GenericBehaviour
 		Vector3 targetDirection;
 		targetDirection = forward * vertical + right * horizontal;
 
+		// Adjust the camera rotation speed factor.
+		float rotationSpeedFactor = 1f;  // Adjust this value to control rotation speed.
+
+		targetDirection *= rotationSpeedFactor;  // Scale the targetDirection to control rotation speed.
+
 		if ((behaviourManager.IsMoving() && targetDirection != Vector3.zero))
 		{
 			Quaternion targetRotation = Quaternion.LookRotation(targetDirection);

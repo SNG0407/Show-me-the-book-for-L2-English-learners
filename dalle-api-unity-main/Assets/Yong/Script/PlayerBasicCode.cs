@@ -7,8 +7,8 @@ using UnityEngine.EventSystems;
 public class PlayerBasicCode : MonoBehaviour
 {
 	public Transform playerCamera;                        
-	public float turnSmoothing = 0.06f;                   
-	public float sprintFOV = 100f;                             
+	public float turnSmoothing = 0.01f;                   
+	public float sprintFOV = 10f;                             
 	private float h;                                     
 	private float v;                                      
 	private int currentBehaviour;                        

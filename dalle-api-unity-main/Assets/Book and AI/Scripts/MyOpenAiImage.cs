@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using REST_API_HANDLER;
@@ -13,7 +13,6 @@ public class MyOpenAiImage : MonoBehaviour
 {
 	public GameObject loadingpanel;
 	public TMP_InputField inputText;
-	public TMP_InputField LoadFileText;
 	public TMP_Text resultText;
 	public List<GameObject> previewObjs;
 
