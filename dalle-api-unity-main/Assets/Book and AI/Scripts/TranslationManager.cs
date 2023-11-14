@@ -259,17 +259,18 @@ public class TranslationManager : MonoBehaviour //https://dictionaryapi.dev/
             int textEndIndex = text.LastIndexOf('"');
             //textEndIndex = textEndIndex+1;
             //Debug.Log(Tag+" EndIndex: " + textEndIndex);
-            text = text.Substring(textStartIndex+1, textEndIndex - textStartIndex-1);
+            if (text != "None")
+            {
+                Debug.Log("Tag : " + text);
+                text = text.Substring(textStartIndex+1, textEndIndex - textStartIndex-1);
+            }
+            else
+            {
+                Debug.Log("Tag : None");
+                text = "None";
+            }
         }
-        if(text.Length > 1)
-        {
-            Debug.Log("Tag : " + text);
-        }
-        else
-        {
-            Debug.Log("Tag : None");
-            text = "None";
-        }
+        
         return text;
     }
     private string Parse_definition(string jsonString, string Tag)

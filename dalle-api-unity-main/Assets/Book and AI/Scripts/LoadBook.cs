@@ -14,7 +14,7 @@ public class LoadBook : MonoBehaviour
     public Transform wordButtonContainer; // The parent object for the word buttons.
     public TextMeshProUGUI meaningText; // Reference to the TextMeshPro Text element where you display the word meaning.
 
-    private string fileName = "Alltext";
+    private string fileName = "HarryPotter";
     private int lineCount = 1;
     private int[] lineSavedArr;
     public int CurrentPage = 1;
@@ -59,10 +59,19 @@ public class LoadBook : MonoBehaviour
           CurrentPageText.text = CurrentPage.ToString();
     }
     public void LoadMyBookTXT(string MyFileName){
+
+
+        //Reset lineSavedArr
+        System.Array.Clear(lineSavedArr, 0, lineSavedArr.Length);
+        //lineSavedArr = new int[100];
+        lineSavedArr[0] = 0;
+        lineCount = 1;
+        CurrentPage =1;
+
         MyFileName = LoadFileText.text;
         LoadBookTxt(MyFileName);
-        MakePages();
         DestroyAllChildren(wordButtonContainer);
+        MakePages();
         ShowCurrentPage(CurrentPage);
     }
     private void LoadBookTxt(string MyFileName)
@@ -313,8 +322,8 @@ public class LoadBook : MonoBehaviour
         else
         {
             CurrentPage = 1;
-            ShowCurrentPage(CurrentPage);
             DestroyAllChildren(wordButtonContainer);
+            ShowCurrentPage(CurrentPage);
 
             Debug.Log("It's the last page.");
         }
@@ -349,6 +358,7 @@ public class LoadBook : MonoBehaviour
             // Destroy the child GameObject.
             Destroy(child.gameObject);
         }
+
     }
 
 }
