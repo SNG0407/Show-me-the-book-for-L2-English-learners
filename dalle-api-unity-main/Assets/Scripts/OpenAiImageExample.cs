@@ -14,7 +14,7 @@ public class OpenAiImageExample : MonoBehaviour
 	public TMP_InputField inputText;
 	public TMP_Text resultText;
 	public List<GameObject> previewObjs;
-
+	public string description;
 	private string IMAGE_GENERTION_API_URL = "https://api.openai.com/v1/images/generations";
 
 	public void SearchButtonClicked()
@@ -28,7 +28,7 @@ public class OpenAiImageExample : MonoBehaviour
 			previewObjs[i].GetComponent<Renderer>().material.mainTexture = null;
 		}
 
-		string description = inputText.text;
+		description = inputText.text;
 		string resolution = "256x256"; // Possible Resolution 256x256, 512x512, or 1024x1024.
 
 		GenerateImage(description, resolution, () => {
@@ -36,7 +36,25 @@ public class OpenAiImageExample : MonoBehaviour
 		});
 		
 	}
+	public void ClickedWordGenerate_Btn()
+	{
+		resultText.text = "";
+		resultText.enabled = false;
+		loadingpanel.SetActive(true);
 
+		for (int i = 0; i < previewObjs.Count; i++)
+		{
+			previewObjs[i].GetComponent<Renderer>().material.mainTexture = null;
+		}
+
+		description = TranslationManager.instance.wordToSearch;
+		string resolution = "256x256"; // Possible Resolution 256x256, 512x512, or 1024x1024.
+
+		GenerateImage(description, resolution, () => {
+			loadingpanel.SetActive(false);
+		});
+
+	}
 	public void GenerateImage(string description, string resolution, Action completationAction)
 	{
 
@@ -65,7 +83,7 @@ public class OpenAiImageExample : MonoBehaviour
 			Texture2D _texture = await GetRemoteTexture(urls[i].url);
 			previewObjs[i].GetComponent<Renderer>().material.mainTexture = _texture;
 			//Utility.WriteImageOnDisk(_texture, System.DateTime.Now.Millisecond + "_createImg_" + i + "_.jpg"); inputText.text
-			Utility.WriteImageOnDisk(_texture, inputText.text + "_.jpg");
+			Utility.WriteImageOnDisk(_texture, description + ".jpg");
 		}
 
 		completationAction.Invoke();

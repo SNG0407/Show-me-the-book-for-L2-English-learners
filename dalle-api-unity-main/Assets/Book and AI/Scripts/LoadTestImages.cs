@@ -18,7 +18,7 @@ public class LoadTestImages : MonoBehaviour
     {
         //rawImages = new RawImage[20];
         // Initialize rawImages array with references to RawImage components
-        //rawImages = GetComponentsInChildren<RawImage>(); //Is it because of this?
+        //rawImages = GetComponentsInChildren<RawImage>(); //Is it because of this? No..
     }
 
     // Update is called once per frame

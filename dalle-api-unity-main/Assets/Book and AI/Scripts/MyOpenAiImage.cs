@@ -33,6 +33,11 @@ public class MyOpenAiImage : MonoBehaviour
 		loadingpanel.SetActive(true);
 
 
+		for (int i = 0; i < previewObjs.Count; i++)
+		{
+			previewObjs[i].GetComponent<Renderer>().material.mainTexture = null;
+		}
+
 		string description = TranslationManager.instance.wordToSearch;
 		string resolution = "256x256"; // Possible Resolution 256x256, 512x512, or 1024x1024.
 
@@ -47,13 +52,13 @@ public class MyOpenAiImage : MonoBehaviour
 		resultText.enabled = false;
 		loadingpanel.SetActive(true);
 
-		for (int i = 0; i < previewObjs.Count; i++)
-		{
-			if (previewObjs[i].GetComponent<Renderer>() != null)
-				previewObjs[i].GetComponent<Renderer>().material.mainTexture = null;
-			else
-				Debug.Log("The preview Object has no Renderer");
-		}
+		//for (int i = 0; i < previewObjs.Count; i++)
+		//{
+		//	if (previewObjs[i].GetComponent<Renderer>() != null)
+		//		previewObjs[i].GetComponent<Renderer>().material.mainTexture = null;
+		//	else
+		//		Debug.Log("The preview Object has no Renderer");
+		//}
 
 		string description = inputText.text;
 		string resolution = "256x256"; // Possible Resolution 256x256, 512x512, or 1024x1024.
@@ -118,26 +123,27 @@ public class MyOpenAiImage : MonoBehaviour
             }
 			//Utility.WriteImageOnDisk(_texture, System.DateTime.Now.Millisecond + "_createImg_" + i + "_.jpg"); inputText.text
 			Utility.WriteImageOnDisk(_texture, description + ".jpg");
+			// Coroutine to wait until the image is written to disk
+			//StartCoroutine(WaitForImageWrite(description, _texture));
+			//// Create a new sprite from the loaded texture
+			//Sprite imageSprite = Sprite.Create(_texture, new Rect(0, 0, _texture.width, _texture.height), Vector2.zero);
 
-			// Create a new sprite from the loaded texture
-			Sprite imageSprite = Sprite.Create(_texture, new Rect(0, 0, _texture.width, _texture.height), Vector2.zero);
+			//// Assign the sprite to the RawImage component
+			//rawImage.texture = imageSprite.texture;
+			////StartCoroutine(WriteImageAndLoad(description, _texture, TranslationManager.instance.wordToSearch));
+			//string filePath = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", description + ".jpg");
+			//if (File.Exists(filePath))
+			//{
+			//	string fileContents = File.ReadAllText(filePath);
+			//	// Now use the fileContents as needed, e.g., display it in a UI Text element.
+			//	Debug.Log("File found: " + fileContents);
 
-			// Assign the sprite to the RawImage component
-			rawImage.texture = imageSprite.texture;
-			//StartCoroutine(WriteImageAndLoad(description, _texture, TranslationManager.instance.wordToSearch));
-			string filePath = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", description + ".jpg");
-			if (File.Exists(filePath))
-			{
-				string fileContents = File.ReadAllText(filePath);
-				// Now use the fileContents as needed, e.g., display it in a UI Text element.
-				Debug.Log("File found: " + fileContents);
-
-			}
-			else
-			{
-				Debug.LogError("File not found: " + filePath);
-				// Handle the situation where the file doesn't exist.
-			}
+			//}
+			//else
+			//{
+			//	Debug.LogError("File not found: " + filePath);
+			//	// Handle the situation where the file doesn't exist.
+			//}
 
 		}
 

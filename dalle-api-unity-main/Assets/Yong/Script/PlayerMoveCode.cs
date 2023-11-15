@@ -30,7 +30,7 @@ public class PlayerMoveCode : GenericBehaviour
 
 		//Hide mouse
 		Time.timeScale = 1;
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
     }
 

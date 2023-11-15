@@ -48,24 +48,55 @@ public class Utility : MonoBehaviour
 
 	public static string WriteImageOnDisk(Texture2D texture, string fileName)
 	{
-        byte[] textureBytes = texture.EncodeToPNG();
-		//string path = GetBasePath() + fileName;
-		string path = Application.dataPath+"/Resources/AI_image/" + fileName;
-		
-		Debug.Log("Path: " + path);
-        
-        File.WriteAllBytes(path, textureBytes);
-		Debug.Log("File Written On Disk! " + path);
+        //      byte[] textureBytes = texture.EncodeToPNG();
+        ////string path = GetBasePath() + fileName;
+        //string path = Application.dataPath+"/Resources/AI_image/" + fileName;
 
+        //Debug.Log("Path: " + path);
+
+        //      File.WriteAllBytes(path, textureBytes);
+        //Debug.Log("File Written On Disk! " + path);
+
+        //      string path2 = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", fileName);
+        //      // Ensure the directory exists
+        //      Directory.CreateDirectory(Path.GetDirectoryName(path2));
+        //      // Write the file content to the path
+        //      File.WriteAllBytes(path2, textureBytes);
+
+        byte[] textureBytes = texture.EncodeToPNG();
+        string baseDirectory = Application.dataPath + "/Resources/AI_image/";
+        string filePath = Path.Combine(baseDirectory, fileName);
         string path2 = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", fileName);
+
         // Ensure the directory exists
         Directory.CreateDirectory(Path.GetDirectoryName(path2));
+
+        // Check if the file already exists
+        if (File.Exists(filePath) || File.Exists(path2))
+        {
+            // If it exists, append a number to the file name
+            int count = 1;
+            string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileName);
+            string fileExtension = Path.GetExtension(fileName);
+
+            while (File.Exists(filePath) || File.Exists(path2))
+            {
+                fileName = $"{fileNameWithoutExtension} ({count}){fileExtension}";
+                filePath = Path.Combine(baseDirectory, fileName);
+                path2 = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", fileName);
+                count++;
+            }
+        }
+
         // Write the file content to the path
+        File.WriteAllBytes(filePath, textureBytes);
         File.WriteAllBytes(path2, textureBytes);
 
+        Debug.Log("File Written On Disk! " + filePath);
+        Debug.Log("File Written On Disk! " + path2);
 
-		return path;
-	}
+        return filePath;
+    }
 
     public static Texture2D GetTextureFromFileName(string fileName)
     {
