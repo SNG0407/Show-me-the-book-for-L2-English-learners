@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonObject : MonoBehaviour
 {
@@ -54,12 +55,16 @@ public class ButtonObject : MonoBehaviour
 
     public void ReadBtn()
     {
-        if (bookReaderUI != null)
-        {
-            bookUI.SetActive(false);
-            bookReaderUI.SetActive(true);
-            //PlayerMoveCode.instance.Is_UI_On = true;
-        }
+        //AIReading
+
+        Debug.Log("Let's read AI book!");
+        SceneManager.LoadScene("AIReading");
+        //if (bookReaderUI != null)
+        //{
+        //    bookUI.SetActive(false);
+        //    bookReaderUI.SetActive(true);
+        //    //PlayerMoveCode.instance.Is_UI_On = true;
+        //}
     }
     public void CloseReaderBtn()
     {

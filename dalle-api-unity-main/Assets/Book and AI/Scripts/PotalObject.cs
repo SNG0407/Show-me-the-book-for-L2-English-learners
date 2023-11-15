@@ -52,7 +52,7 @@ public class PotalObject : MonoBehaviour
     public void EnterBtn()
     {
         Debug.Log("Enter the room!");
-         SceneManager.LoadScene("HarryPotterRoom");
+        SceneManager.LoadScene("HarryPotterRoom");
         // if (bookReaderUI != null)
         // {
         //     EnterRoomUI.SetActive(false);
@@ -67,5 +67,11 @@ public class PotalObject : MonoBehaviour
             EnterRoomUI.SetActive(false);
             //PlayerMoveCode.instance.Is_UI_On = true;
         }
+    }
+
+    public void GoBackToLibrary()
+    {
+        Debug.Log("Enter the room!");
+        SceneManager.LoadScene("Main Library");
     }
 }
