@@ -43,7 +43,7 @@ public class PlayerMoveCode : GenericBehaviour
 
 
 		//Press ESC pause
-		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.I))
+		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.E))
 		{
 			isLock = !isLock;
 			if (isLock)

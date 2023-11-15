@@ -130,6 +130,8 @@ MonoBehaviour:
   fileNameText: {fileID: 62871158723777506}
   createFrameButton: {fileID: 62871158088555880}
   fileImage: {fileID: 62871157376345125}
+  AI_FramePrefab: {fileID: 4612620165290488490, guid: 92e1809bdc822864fa96931b32a5652a,
+    type: 3}
 --- !u!222 &540761179221226222
 CanvasRenderer:
   m_ObjectHideFlags: 0

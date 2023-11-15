@@ -14,6 +14,9 @@ public class InventorySlotScript : MonoBehaviour
     private string fileName;
 
     private InventoryScript inventoryScript;
+
+    public GameObject AI_FramePrefab;
+    public Transform AIFramePos;
     // Start is called before the first frame update
     public void SetItem(string fileName, Texture2D AIfileImage, InventoryScript inventoryScript)
     {
@@ -29,6 +32,24 @@ public class InventorySlotScript : MonoBehaviour
     private void CreateFrame()
     {
         // Call the function in the inventory script to create a frame using the file name
-        inventoryScript.CreateFrame(fileName);
+        //inventoryScript.CreateFrame(fileName);
+
+        GameObject AI_Frame = Instantiate(AI_FramePrefab, transform.Find("AI Frames"));
+
+        // Find the RawImage component in the child
+        RawImage AIImage = AI_Frame.GetComponentInChildren<RawImage>();
+        // Check if the RawImage component is found
+        Debug.Log("Create!");
+        if (fileImage.texture != null)
+        {
+            // Assign the texture to the RawImage component
+            AIImage.texture = fileImage.texture;
+            Debug.Log("Frame!");
+
+        }
+        else
+        {
+            Debug.LogError("RawImage component not found in the child of AI_FramePrefab.");
+        }
     }
 }
