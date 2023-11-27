@@ -29,6 +29,12 @@ public class OpenAiImageExample : MonoBehaviour
 		}
 
 		description = inputText.text;
+		// Replace invalid characters with underscores
+		foreach (char invalidChar in Path.GetInvalidFileNameChars())
+		{
+			description = description.Replace(invalidChar, '_');
+		}
+
 		string resolution = "256x256"; // Possible Resolution 256x256, 512x512, or 1024x1024.
 
 		GenerateImage(description, resolution, () => {

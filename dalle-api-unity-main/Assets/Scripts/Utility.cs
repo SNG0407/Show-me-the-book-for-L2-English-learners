@@ -65,6 +65,8 @@ public class Utility : MonoBehaviour
 
         byte[] textureBytes = texture.EncodeToPNG();
         string baseDirectory = Application.dataPath + "/Resources/AI_image/";
+
+        
         string filePath = Path.Combine(baseDirectory, fileName);
         string path2 = Path.Combine(Application.persistentDataPath, "Uploaded_AI_Files", fileName);
 
