@@ -5,19 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Text to 3D Texture.unity
-    guid: 80381a15bac5f4965a3ad240d5a51b1a
   - enabled: 1
-    path: Assets/Book and AI/Scenes/HarryPotterRoom.unity
-    guid: 7d78df540f2d0054abbb011ce5e10591
+    path: Assets/Book and AI/Scenes/Final/Main Library.unity
+    guid: cde4e700a32c4e448b719fce8acc6aca
   - enabled: 1
-    path: Assets/Book and AI/Scenes/AIReading.unity
+    path: Assets/Book and AI/Scenes/Final/AIReading.unity
     guid: 4bd062a26ce397944884bbcdd043f797
   - enabled: 1
-    path: Assets/Book and AI/Scenes/LoadSavedImages.unity
-    guid: 32ff84ba1c071814084156cc8f6adf6a
-  - enabled: 1
-    path: Assets/Book and AI/Scenes/Main Library.unity
-    guid: cde4e700a32c4e448b719fce8acc6aca
+    path: Assets/Book and AI/Scenes/Final/HarryPotterRoom.unity
+    guid: 7d78df540f2d0054abbb011ce5e10591
   m_configObjects: {}

@@ -16,8 +16,8 @@ public class GenerateImageRequestModel
     public int n;
     public string size;
 
-    string API_KEY = Utility.API_KEY;//"sk-xxxxxx"; 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
-    string ORGANISATION_KEY = Utility.ORGANIZATION_KEY;//"org-xxxxxx"; org-2x5w4OL4zDlSk273hsUix2WH
+    string API_KEY = Utility.API_KEY;//"sk-xxxxxx"; 
+    string ORGANISATION_KEY = Utility.ORGANIZATION_KEY;//"org-xxxxxx"; 
 
     public GenerateImageRequestModel(string _prompt, int _n, string _size)
     {
